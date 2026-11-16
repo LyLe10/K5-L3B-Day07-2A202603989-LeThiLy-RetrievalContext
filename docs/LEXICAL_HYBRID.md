@@ -1,5 +1,7 @@
 # Milestone 3: lexical and hybrid retrieval
 
+Algorithm and adapter details below remain useful; smoke counts/commands describe the earlier integration stage, not final DEV/TEST results. The DEV comparison and selected TF-IDF configuration are in the [final report](../report/individual/2A202603989_LeThiLy.md); execution boundaries are in [REPRODUCIBILITY](REPRODUCIBILITY.md).
+
 All methods implement `search(query, *, filters, top_k)` and return original
 source metadata, IDs, physical/printed pages and provenance plus score/rank.
 The starter and dense implementation are unchanged. No dependencies added.

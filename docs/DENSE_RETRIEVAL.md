@@ -1,5 +1,7 @@
 # Milestone 2: PostgreSQL adapter and dense smoke
 
+This document preserves the dense adapter design and historical integration-smoke setup. Its milestone scope and 2400-character smoke budget are not the final Agent configuration. See [REPRODUCIBILITY](REPRODUCIBILITY.md#openrouter-and-locked-evaluation-configuration) and the [final DEV/TEST report](../report/individual/2A202603989_LeThiLy.md) for completed evaluation and locked settings. Historical diagnostic commands are not instructions to rerun completed evaluation.
+
 This milestone implements `Retriever.search(query, *, filters, top_k)` from
 `starter/agentic.py`. Starter code is unchanged. No controller, lexical/hybrid
 retriever, official benchmark or LLM call is included.

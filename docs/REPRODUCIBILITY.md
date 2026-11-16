@@ -2,7 +2,7 @@
 
 ## What a public clone provides
 
-Public code, selected tests, frozen configuration/dependency identities and final aggregate/per-case metric metadata are available through [the staging manifest](FINAL_PUBLIC_STAGING_MANIFEST.md). Existing tracked starter/specification files remain part of the repository. The public report contains no TEST questions, expected answers, gold quotations or corpus excerpts. Public case IDs, answerable flags and approved numeric metric metadata are not a replacement question set.
+Public code, selected tests, frozen configuration/dependency identities and final aggregate/per-case metric metadata were committed at `bdce3bd7f2ecaddbbc13314a46b952e46f659fa0`; the user confirms publication. See [the documentation index](README.md), [public audit](PUBLIC_SUBMISSION_AUDIT.md) and [final individual report](../report/individual/2A202603989_LeThiLy.md). Existing tracked starter/specification files remain part of the repository. The public report contains no TEST questions, expected answers, gold quotations or corpus excerpts. Public case IDs, answerable flags and approved numeric metric metadata are not a replacement question set.
 
 The public clone is deliberately **not a self-contained benchmark execution package**. Full retrieval/Agent reproduction and semantic regrading require [restricted evidence access](EVIDENCE_ACCESS.md). A missing private file must fail validation; do not create empty datasets, rewrite hashes, replace gold or disable identity checks to make commands pass.
 
@@ -37,7 +37,7 @@ With Python available, the starter-only synthetic tests do not require restricte
 python3 -B -m unittest tests.test_agentic tests.test_agent_metrics tests.test_baseline
 ```
 
-These test synthetic fixtures/local lexical CLI; they do not reproduce benchmark results. Complete source import closure for the pinned runner is included through existing tracked files plus the explicit manifest. External data/model closure is intentionally restricted.
+These test synthetic fixtures/local lexical CLI; they do not reproduce benchmark results. The public commit includes local application source imports for the pinned runner. External data/model closure is intentionally restricted. On Windows, use a UTF-8 Python environment (`PYTHONUTF8=1`) for these fixtures; documented execution uses WSL.
 
 The historical full offline suite passed 193/193 in the authorized local environment. Do not promise 193/193 in an unprovisioned public clone: dependency-identity and dataset tests need private Day06/runtime/benchmark artifacts. Once private dependencies are provided, the existing full command is:
 
@@ -57,3 +57,27 @@ Public metrics support checking counts, denominators, deltas and cost arithmetic
 4. Only with new explicit authorization consider database/retrieval or provider execution. Public reproduction documentation does not authorize spend, reruns or account changes.
 
 Full submission remains incomplete until the grader accepts the evidence/access route. Public code and aggregates do not substitute for SUBMISSION.md:20–23 evidence.
+
+## Agent and context architecture
+
+The runtime reuses `Controller.decide(question, history)` and `Retriever.search(query, *, filters, top_k)`. A decision selects search or a final answer. Search results accumulate as candidates; after each search the context builder repacks whole chunks in retrieval order, deduplicates IDs, rejects conflicting provenance, skips chunks that do not fit and tries later candidates. No LLM compression or reranker is implied. Earlier-search priority can prevent later evidence from fitting; this remains a limitation.
+
+Model-facing context retains chunk ID, text, source ID/source, physical page and printed-page label. Retrieval logs retain scores/ranks; scores are not answer confidence. Citation maps refer only to selected chunks. Final citation IDs must be unique, belong to context and agree with inline citation IDs. Those deterministic checks do not prove semantic support: approved manual reviews evaluate the full answer and each citation separately.
+
+An explicit empty-citation answer and system guards can produce abstention. Repeated-search, empty-context, citation and search-limit termination are distinguished in traces; provider, malformed-output, timeout, database and context-construction failures remain operational errors. Do not count them as successful abstentions. Trace events retain decisions, tools, queries, retrieved/context IDs, citations, sanitized errors, latency and provider usage/cost.
+
+## OpenRouter and locked evaluation configuration
+
+The adapter normalizes JSON search/answer actions into the existing controller contract; it does not require native function calling. `OPENROUTER_API_KEY` is read from the executing process environment, never hardcoded or logged. Initialization/import does not perform inference; redirects, automatic retries and model fallback are disabled. HTTP/provider failures use sanitized codes; raw headers/bodies must not enter logs.
+
+Final Baseline/E1 use `qwen/qwen3-30b-a3b-instruct-2507`, temperature 0, max output 512, timeout 60 seconds, TF-IDF top_k=3, max_searches=2 and context budget 12000 UTF-8 bytes. E1 changes only the SYSTEM prompt; E2 was a separate DEV-only max_searches=1 experiment. The [immutable E1 lock](../results/milestone5d_e1_final_configuration_lock.json), not historical smoke defaults/free-model policies, is authoritative. Its SHA256 remains `87febe40ba9ba2c2e3204333e75b1578e830bb10469b29e3d4116be353e5579e`.
+
+The generic context packer accepts a supplied counter; final byte-budget configuration is not measured model tokens. Full-message byte/token estimates are planning safeguards, not an independently proven provider billing bound. Provider-reported token usage and actual cost are recorded separately.
+
+## Request accounting, errors and resume
+
+The [frozen TEST runner](../scripts/frozen_test_evaluation.py) keeps variants separate: at most 7 cases, 21 LLM requests per variant, 3 requests/case and 2 retrievals/case. Planned reservation envelopes were 0.084 USD per variant, 0.168 USD combined, at 0.004 USD per attempted request. These are internal request/reservation controls, not an unconditional financial guarantee; hard monetary assurance remains UNVERIFIED. They are not the obsolete Milestone4B smoke policy.
+
+Identity/source pins are checked before provider activity. A durable reservation is written before the HTTP request; failed or uncertain attempts are not silently erased or refunded. Outcomes and case-completion checkpoints preserve accounting across resume. Resume skips completed cases and fails closed on inconsistent identities, incomplete/ambiguous cases, corrupt journals, duplicates or exhausted limits. Never delete or rename journals/checkpoints/claims to bypass a stop. Unknown cost/provider errors require audit before further execution; do not replay an uncertain request automatically.
+
+Baseline/E1 TEST is already completed, not a pending smoke run. Retained TEST reservations were 0.068/0.064 USD; actual provider costs were 0.00193353/0.00199362 USD. See [the final report](../report/individual/2A202603989_LeThiLy.md) and [paired metrics](../results/milestone6_test_paired_comparison.json). This documentation grants no new execution/spending authorization, and no reservation is released by cleanup.

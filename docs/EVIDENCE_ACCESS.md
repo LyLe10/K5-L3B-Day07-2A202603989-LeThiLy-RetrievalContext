@@ -4,6 +4,8 @@
 
 Policy: public code and numeric metrics; restricted questions/gold, corpus excerpts, raw traces and semantic-review evidence. This document lists paths/roles only, not their contents. It does not grant redistribution permission or create an access channel.
 
+Public code/metrics/report were committed at `bdce3bd7f2ecaddbbc13314a46b952e46f659fa0`; publication is user-confirmed, not independently checked over HTTP in this cleanup. Public availability does not grant access to the restricted evidence below. Baseline/E1 TEST and approved grading are completed; access-channel and grader-acceptance statuses remain PENDING.
+
 ## Restricted evidence manifest
 
 | Exact path or group | Why restricted / grader purpose |
@@ -41,4 +43,4 @@ Do not include API keys, .env, credentials or unredacted terminal dumps even in 
 
 An earlier audit may have exposed TEST gold in truncated local tool output. User chose KEEP_EXISTING_TEST_WITH_DISCLOSURE and reports instructor acceptance. No completely blind evaluation claim is made; existing TEST/configuration remains unchanged. This does not establish acceptance of the separate restricted-sharing channel above.
 
-Local Git audit found restricted snapshots reachable through internal `refs/codex/*`. No matches were found in the current `main`/HEAD ancestry under the recorded scan. Do not mirror this repository or export internal refs/whole .git for public delivery. A narrowly scoped future push of the reviewed main branch requires separate approval. No refs/history were deleted or rewritten; remote contents were not inspected. See [public audit](PUBLIC_SUBMISSION_AUDIT.md).
+The pre-publication Git audit found restricted snapshots reachable through internal `refs/codex/*`, outside the reviewed main ancestry. No matches were found in that ancestry under the recorded scan. Do not mirror this repository or export internal refs/whole .git for public delivery. The user confirms the reviewed main publication at `bdce3bd`; future cleanup commit/push still requires approval. No refs/history were deleted or rewritten; remote contents were not inspected in this cleanup. See [public audit](PUBLIC_SUBMISSION_AUDIT.md).

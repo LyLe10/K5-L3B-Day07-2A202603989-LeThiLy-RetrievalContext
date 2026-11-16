@@ -2,7 +2,23 @@
 
 Date: 2026-11-16. Offline only. Policy: PUBLIC CODE + PUBLIC METRICS + RESTRICTED EVIDENCE.
 
-## Decisions
+## Current publication and documentation cleanup
+
+Public submission commit: `bdce3bd7f2ecaddbbc13314a46b952e46f659fa0` (local HEAD verified; user confirms GitHub push). Baseline/E1 frozen TEST and approved manual grading are complete. **PUBLIC_READY: PASS for the reviewed public content. FULL_SUBMISSION_READY: BLOCKED** pending restricted grader access/acceptance. No network verification of remote publication was performed here.
+
+The current approved cleanup reduces tracked documentation from 19 files to six: [index](README.md), [reproducibility](REPRODUCIBILITY.md), [evidence access](EVIDENCE_ACCESS.md), [dense retrieval](DENSE_RETRIEVAL.md), [lexical/hybrid retrieval](LEXICAL_HYBRID.md), and this audit. Agent/context architecture, OpenRouter handling and accounting/resume principles from three removed milestone documents are consolidated in REPRODUCIBILITY. Obsolete free-model, smoke budget and pending-execution instructions are not current instructions.
+
+The sections below record the **historical pre-publication audit**, including then-current file counts, HEAD, pending staging and hash comparisons. They do not describe the current cleanup diff or deny the subsequent publication at bdce3bd. The old staging manifest is retired; use the current six-document index and Git diff for cleanup review.
+
+### Historical hash inventories and removed documents
+
+`results/milestone5d_final_selection_gate.json` records historical `source_hashes`; `results/milestone6_test_runner_offline_validation.json` records historical `protected_input_sha256`. These inventories include documents now removed or updated. They are immutable evidence of earlier inputs, not a current Markdown navigation manifest or instructions to repin runtime dependencies. They remain unchanged. Obtain the historical version with `git show bdce3bd:docs/<filename>` and compare the recorded hash; do not rewrite an inventory to match today's documentation. The E1 lock, pinned runtime source and result artifacts remain unchanged by cleanup.
+
+Approved removals: FINAL_PUBLIC_STAGING_MANIFEST.md; MILESTONE2_REPORT.md; MILESTONE3_REPORT.md; MILESTONE4_REPORT.md; OPENROUTER_ADAPTER.md; MILESTONE4B_PAID_SAFE_RESUME.md; MILESTONE4B_BUDGET1_UPDATE.md; MILESTONE4B_KEY_LIMIT_DIAGNOSIS.md; MILESTONE4B_PAID_MODEL_REVIEW.md; MILESTONE4B_REAL_LLM_REPORT.md; MILESTONE4B_REPORT.md; MILESTONE4B_SAFE_RESUME.md; MILESTONE4B_TERMINAL.md (all under docs/). Deletion changes the current tree only, not prior public Git history; no history rewrite or internal-ref removal is authorized/performed.
+
+Source contracts still require benchmark/per-query evidence, grading and reproduction access under SUBMISSION/RUBRIC; removing duplicate milestone narratives does not waive those obligations. No new inference or evaluation is needed for this documentation cleanup. No cleanup staging, commit or push has been performed.
+
+## Historical decisions before public commit
 
 - PUBLIC_READY: **PASS for the explicit reviewed bundle and current tracked main ancestry**, subject to normal pre-publication staged-diff review and separate commit/push approval.
 - FULL_SUBMISSION_READY: **BLOCKED**. Required benchmark/per-query evidence and approved labels exist locally, but the grader's restricted access channel and acceptance are PENDING.

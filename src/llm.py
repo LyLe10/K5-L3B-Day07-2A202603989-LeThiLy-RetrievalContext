@@ -149,7 +149,8 @@ class OpenRouterController:
                     error.code, 'OPENROUTER_PROVIDER_ERROR')
                 error.close()
             elif type(error) is RuntimeError and str(error) in (
-                    'OPENROUTER_KEY_MISSING', 'OPENROUTER_PROVIDER_ERROR'):
+                    'OPENROUTER_KEY_MISSING', 'OPENROUTER_PROVIDER_ERROR',
+                    'SMOKE_API_BUDGET_STOP', 'PAID_USD_BUDGET_STOP', 'PAID_REQUEST_GUARD_REQUIRED'):
                 code = str(error)
             self.last_trace.update(status='error', error=code)
             if timed_out:

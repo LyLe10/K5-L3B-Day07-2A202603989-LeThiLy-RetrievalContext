@@ -1,0 +1,365 @@
+{
+  "status": "FINAL_REVIEWED_OFFLINE",
+  "split": "test",
+  "cases": 7,
+  "paired_cases": [
+    {
+      "query_id": "test-01",
+      "baseline": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 0,
+        "context_grade": 1,
+        "citation_support": [
+          false
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "E1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "deltas": {
+        "answer_correctness_grade": 0,
+        "answer_grade": 2,
+        "context_grade": 1
+      }
+    },
+    {
+      "query_id": "test-02",
+      "baseline": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 1,
+        "context_grade": 2,
+        "citation_support": [
+          false
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "E1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "deltas": {
+        "answer_correctness_grade": 0,
+        "answer_grade": 1,
+        "context_grade": 0
+      }
+    },
+    {
+      "query_id": "test-03",
+      "baseline": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 1,
+        "context_grade": 2,
+        "citation_support": [
+          false
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "E1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "deltas": {
+        "answer_correctness_grade": 0,
+        "answer_grade": 1,
+        "context_grade": 0
+      }
+    },
+    {
+      "query_id": "test-04",
+      "baseline": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "E1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "deltas": {
+        "answer_correctness_grade": 0,
+        "answer_grade": 0,
+        "context_grade": 0
+      }
+    },
+    {
+      "query_id": "test-05",
+      "baseline": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true,
+          true
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "E1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true,
+          true
+        ],
+        "abstention_correct": null,
+        "termination": "answer"
+      },
+      "deltas": {
+        "answer_correctness_grade": 0,
+        "answer_grade": 0,
+        "context_grade": 0
+      }
+    },
+    {
+      "query_id": "test-06",
+      "baseline": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true,
+        "termination": "search_limit"
+      },
+      "E1": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true,
+        "termination": "search_limit"
+      },
+      "deltas": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0
+      }
+    },
+    {
+      "query_id": "test-07",
+      "baseline": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true,
+        "termination": "search_limit"
+      },
+      "E1": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true,
+        "termination": "search_limit"
+      },
+      "deltas": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "baseline": {
+      "cases": 7,
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "grounded_answer": {
+        "0": 1,
+        "1": 2,
+        "2": 2,
+        "N": 5,
+        "mean": 1.2,
+        "normalized_mean": 0.6
+      },
+      "citation_validity": {
+        "n": 3,
+        "N": 6
+      },
+      "answer_citation_coverage": {
+        "n": 5,
+        "N": 5
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 5
+      },
+      "system_errors": 0,
+      "answer_correctness": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5,
+        "mean": 2.0,
+        "normalized_mean": 1.0
+      },
+      "context_grades": {
+        "0": 0,
+        "1": 1,
+        "2": 4
+      },
+      "scheduled_cases": 7,
+      "abstention_scheduled": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention_scheduled": {
+        "n": 0,
+        "N": 5
+      },
+      "retrieval_call_distribution": {
+        "2": 3,
+        "1": 4
+      },
+      "error_stages": {}
+    },
+    "e1": {
+      "cases": 7,
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5,
+        "mean": 2.0,
+        "normalized_mean": 1.0
+      },
+      "citation_validity": {
+        "n": 6,
+        "N": 6
+      },
+      "answer_citation_coverage": {
+        "n": 5,
+        "N": 5
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 5
+      },
+      "system_errors": 0,
+      "answer_correctness": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5,
+        "mean": 2.0,
+        "normalized_mean": 1.0
+      },
+      "context_grades": {
+        "0": 0,
+        "1": 0,
+        "2": 5
+      },
+      "scheduled_cases": 7,
+      "abstention_scheduled": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention_scheduled": {
+        "n": 0,
+        "N": 5
+      },
+      "retrieval_call_distribution": {
+        "1": 5,
+        "2": 2
+      },
+      "error_stages": {}
+    }
+  },
+  "runtime": {
+    "baseline": {
+      "llm_requests": 17,
+      "retrieval_calls": 10,
+      "prompt_tokens": 16947,
+      "completion_tokens": 1361,
+      "total_tokens": 18308,
+      "provider_reported_cost_usd": "0.00193353",
+      "retained_reservations_usd": "0.068",
+      "agent_latency_ms_sum": 30970.929213006457,
+      "agent_latency_ms_mean": 4424.418459000923
+    },
+    "e1": {
+      "llm_requests": 16,
+      "retrieval_calls": 9,
+      "prompt_tokens": 18348,
+      "completion_tokens": 1141,
+      "total_tokens": 19489,
+      "provider_reported_cost_usd": "0.00199362",
+      "retained_reservations_usd": "0.064",
+      "agent_latency_ms_sum": 35114.04920899804,
+      "agent_latency_ms_mean": 5016.292744142577
+    }
+  },
+  "e1_minus_baseline": {
+    "correctness_percentage_points": 0,
+    "grounded_answer_percentage_points": 40,
+    "context_sufficiency_percentage_points": 20,
+    "citation_support_percentage_points": 50,
+    "correct_abstention_percentage_points": 0,
+    "false_abstention_percentage_points": 0,
+    "llm_requests": -1,
+    "retrieval_calls": -1,
+    "total_tokens": 1181,
+    "provider_cost_usd": "0.00006009",
+    "agent_latency_ms_sum": 4143.119995991583
+  },
+  "limitations": [
+    "Five answerable and two absence cases, one run/variant; no statistical/generalization claim.",
+    "Prior possible TEST gold exposure retained; KEEP_EXISTING_TEST_WITH_DISCLOSURE; instructor acceptance reported by user.",
+    "C is original-question correctness extension; G is whole-answer evidence grounding.",
+    "Absence correctness uses previously accepted scoped labels; both variants terminate via system search_limit, not voluntary LLM abstention.",
+    "G/X/S are human-approved judgments; membership is not semantic support.",
+    "Provider cost differs from retained reservation and is not invoice reconciliation."
+  ],
+  "selected_configuration_unchanged": true,
+  "new_http_requests": 0,
+  "new_inference_requests": 0
+}

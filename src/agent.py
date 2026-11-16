@@ -53,6 +53,13 @@ def run_agent(question, controller, retriever, *, filters=None, max_searches=4,
                 validate_search(query,filters,top_k)
             except RetrievalError:
                 return finish('error','INVALID_SEARCH_QUERY',answer='')
+            # Same question/filter/top-k cannot add evidence by repeating an
+            # identical search. Keep the decision event, skip duplicate I/O and
+            # stop conservatively rather than spending another LLM turn.
+            normalized = ' '.join(query.casefold().split())
+            if any(' '.join(e['query'].casefold().split()) == normalized
+                   for e in events if e['event']=='search'):
+                return finish('abstain','repeated_search')
             search_start = perf_counter()
             try:
                 results = retriever.search(query,filters=filters,top_k=top_k)

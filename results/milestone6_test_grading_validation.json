@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "review_entries": 14,
+  "reviewed": 14,
+  "pending_in_separate_review_files": 0,
+  "raw_placeholders_preserved": true,
+  "approved_grades_exact": true,
+  "citation_lengths_types": "PASS",
+  "approved_absence_labels": "PASS_MANIFEST_APPROVAL",
+  "accounting": {
+    "baseline": {
+      "journal_accounting": "PASS",
+      "records": 42,
+      "requests": 17,
+      "pending_unmatched": 0,
+      "checkpoint_raw_hash_consistency": "PASS"
+    },
+    "e1": {
+      "journal_accounting": "PASS",
+      "records": 40,
+      "requests": 16,
+      "pending_unmatched": 0,
+      "checkpoint_raw_hash_consistency": "PASS"
+    }
+  },
+  "protected_input_sha256": {
+    "results/milestone6_test_run/baseline/checkpoints/test-01.json": "fbdb9c1ab066506b8a1d4b216f750785eb6c8f9a83bc1033fc3589b72e5eda05",
+    "results/milestone6_test_run/baseline/checkpoints/test-02.json": "594f2d544997ab932b18ff8d54e6bdb1d6f637d50e1f208529d64e24dd1c7044",
+    "results/milestone6_test_run/baseline/checkpoints/test-03.json": "705231340e7ec41ccf2c57af732a8f7728c2ffbfbd3d3fc85b2496c98599936a",
+    "results/milestone6_test_run/baseline/checkpoints/test-04.json": "b51a089dd8a72f1b786e11695aa0a7931b5fedb1bfe4e996ff35625f86cae60d",
+    "results/milestone6_test_run/baseline/checkpoints/test-05.json": "e7afa1de39f83371fd2303804618945d168741e6aaa8bbddb89dbdce9f0f0bb7",
+    "results/milestone6_test_run/baseline/checkpoints/test-06.json": "b483c4bb46b6226c5f55bc14eaa69391bfb824b8eab2807e84cc327ef00ce42b",
+    "results/milestone6_test_run/baseline/checkpoints/test-07.json": "fc8f4e2306e922ffdf22077d3754d2b64607e184511858a2fb744fb8f58fa96f",
+    "results/milestone6_test_baseline_raw.json": "9474f34c99b5772c85039cb597d5349ad4a5e22f7f2e9d3e0cb6c2010c2cc5e1",
+    "results/milestone6_test_run/baseline/requests.jsonl": "5279ec302e1ed8abaee5e1d7096555fab09b2cffbcacbb196b3ecce3966064fb",
+    "results/milestone6_test_run/baseline/identity.json": "5cd07f3b5374971f62a41f2febeb66c29777fb026865ccf5bbe011db61b1893b",
+    "results/milestone6_test_run/E1/checkpoints/test-01.json": "4b4b7b5a3835d63824def59eacf2a3384fb2613632f4bc172e72aa5c5c0d78dd",
+    "results/milestone6_test_run/E1/checkpoints/test-02.json": "116143951056bee6427ca9da7f112653616c3f0fcb551c84e31b0e30ebe6d2c1",
+    "results/milestone6_test_run/E1/checkpoints/test-03.json": "ed2884ffafd903b2d830416eed44916dcff2f2e5ef653bd26f033a8361346883",
+    "results/milestone6_test_run/E1/checkpoints/test-04.json": "3ab6ce17f9c682d69acadb255ce2f0d2a806ad9385063cc2a0c6401220a8c2dc",
+    "results/milestone6_test_run/E1/checkpoints/test-05.json": "aae9d2a21c51c395626356edbb0861d21e265b58f2a154b42915aae7e1700d4f",
+    "results/milestone6_test_run/E1/checkpoints/test-06.json": "1941e73348db92d8c2f5a667d82088a50ae0b83323df54a801ea9dece1f5ca14",
+    "results/milestone6_test_run/E1/checkpoints/test-07.json": "5f4aa814fab7776bf66156feae5c160a87933a8f3c9c6cab5d1a8260e2a43ae9",
+    "results/milestone6_test_e1_raw.json": "9051423647e3ccbedb5abcddc6104f3dc68bc5a2cbb23d5c53b9cc613e747c4f",
+    "results/milestone6_test_run/E1/requests.jsonl": "275e6b22ec3b624c280d623c64887ea86784bde5f17b287a16f22b756b92f1d8",
+    "results/milestone6_test_run/E1/identity.json": "eec22f0829a519f204cb3796d69dbd5c5c2de0a35d64451bf0efadbf354c63b7"
+  },
+  "aggregator": "score_reviewed, AST-selected unchanged pure definitions",
+  "offline_tests": {
+    "command": "python -B -m unittest tests.test_agent_metrics",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0
+  },
+  "scoring_cases": "Minimal id/split/answerable metadata from approved seven-case mapping, not a replacement benchmark or expected answers.",
+  "new_http_requests": 0,
+  "new_inference_requests": 0,
+  "new_reservations": 0,
+  "source_modified": false,
+  "final_checks": {
+    "exact_approved_C_G_X_S_abstention_14": "PASS",
+    "stored_metrics_reproduced": "PASS",
+    "local_links": "PASS",
+    "existing_files_hashed": 292,
+    "existing_files_changed": [
+      "docs/DAY07_TEST_EXECUTION_WORKSHEET.md"
+    ],
+    "raw_checkpoints_journals_benchmark_lock_source_and_day6_dependencies_unchanged": true,
+    "new_artifacts": 8,
+    "worksheet_is_only_existing_file_modified": true
+  }
+}

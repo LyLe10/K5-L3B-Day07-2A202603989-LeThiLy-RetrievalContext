@@ -1,0 +1,97 @@
+{
+  "status": "FINAL_REVIEWED_OFFLINE",
+  "split": "test",
+  "variant": "baseline",
+  "metrics": {
+    "cases": 7,
+    "tool_use": {
+      "n": 7,
+      "N": 7
+    },
+    "grounded_answer": {
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "N": 5,
+      "mean": 1.2,
+      "normalized_mean": 0.6
+    },
+    "citation_validity": {
+      "n": 3,
+      "N": 6
+    },
+    "answer_citation_coverage": {
+      "n": 5,
+      "N": 5
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention": {
+      "n": 0,
+      "N": 5
+    },
+    "system_errors": 0,
+    "answer_correctness": {
+      "0": 0,
+      "1": 0,
+      "2": 5,
+      "N": 5,
+      "mean": 2.0,
+      "normalized_mean": 1.0
+    },
+    "context_grades": {
+      "0": 0,
+      "1": 1,
+      "2": 4
+    },
+    "scheduled_cases": 7,
+    "abstention_scheduled": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention_scheduled": {
+      "n": 0,
+      "N": 5
+    },
+    "retrieval_call_distribution": {
+      "2": 3,
+      "1": 4
+    },
+    "error_stages": {}
+  },
+  "runtime": {
+    "llm_requests": 17,
+    "retrieval_calls": 10,
+    "prompt_tokens": 16947,
+    "completion_tokens": 1361,
+    "total_tokens": 18308,
+    "provider_reported_cost_usd": "0.00193353",
+    "retained_reservations_usd": "0.068",
+    "agent_latency_ms_sum": 30970.929213006457,
+    "agent_latency_ms_mean": 4424.418459000923
+  },
+  "context_sufficiency": {
+    "n": 4,
+    "N": 5
+  },
+  "citation_membership": {
+    "n": 6,
+    "N": 6
+  },
+  "denominators": {
+    "correctness": "sum C/(2*5)",
+    "grounded_answer": "sum G/(2*5)",
+    "context": "X=2 /5; absence excluded",
+    "citation": "semantic supported/final citations",
+    "abstention": "correct/2",
+    "latency": "sum/mean over seven cases"
+  },
+  "aggregator": "scripts.dev_agent_evaluation.score_reviewed; unmodified pure definitions executed offline",
+  "scoring_cases": "results/milestone6_test_scoring_cases.json",
+  "review_source": "results/milestone6_test_baseline_manual_reviews.json",
+  "raw_source": "results/milestone6_test_baseline_raw.json",
+  "new_inference_requests": 0,
+  "new_http_requests": 0
+}

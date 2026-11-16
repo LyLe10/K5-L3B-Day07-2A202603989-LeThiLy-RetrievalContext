@@ -84,10 +84,51 @@ class ContextAgentTests(unittest.TestCase):
         self.assertEqual(history[0]['queries'],['one','two'])
 
     def test_search_limit_and_invalid_actions(self):
-        r=self.agent([dict(action='search',query='q')]*3,max_searches=2)
+        r=self.agent([dict(action='search',query=q) for q in ['one','two','three']],max_searches=2)
         self.assertEqual(r['events'][-1]['event'],'search_limit')
         for action in [None,dict(action='bad'),dict(action='search',query=''),dict(action='answer',answer=1,citations=[])]:
             self.assertEqual(self.agent([action])['status'],'error')
+
+    def test_repeated_search_stops_before_second_retrieval_or_third_llm(self):
+        for second in ['query','  QUERY  ','query\n']:
+            controller=MagicMock(spec=['decide'])
+            controller.decide.side_effect=[dict(action='search',query='query'),
+                dict(action='search',query=second),RuntimeError('must not be called')]
+            retriever=MagicMock(spec=['search']);retriever.search.return_value=[CHUNK]
+            result=run_agent('Any technical question',controller,retriever,count_tokens=counter,max_searches=2)
+            self.assertEqual((result['status'],result['answer']),('abstain',ABSTENTION))
+            self.assertEqual(result['events'][-1]['event'],'repeated_search')
+            self.assertEqual(controller.decide.call_count,2)
+            self.assertEqual(retriever.search.call_count,1)
+            self.assertEqual(result['context_ids'],[CHUNK['id']])
+
+    def test_distinct_searches_still_allow_final_answer_at_limit(self):
+        result=self.agent([dict(action='search',query='one'),dict(action='search',query='two'),
+            dict(action='answer',answer='Evidence [B:unit-1]',citations=['B:unit-1'])],max_searches=2)
+        self.assertEqual(result['status'],'answered')
+        self.assertEqual(sum(e['event']=='search' for e in result['events']),2)
+
+    def test_unique_search_limit_skips_third_retrieval(self):
+        controller=MagicMock(spec=['decide'])
+        controller.decide.side_effect=[dict(action='search',query=q) for q in ['one','two','three']]
+        retriever=MagicMock(spec=['search']);retriever.search.return_value=[]
+        result=run_agent('q',controller,retriever,count_tokens=counter,max_searches=2)
+        self.assertEqual(result['status'],'abstain')
+        self.assertEqual(result['events'][-1]['event'],'search_limit')
+        self.assertEqual(retriever.search.call_count,2)
+
+    def test_failure_after_valid_search_is_not_abstention(self):
+        for error in [RuntimeError('provider private'),TimeoutError('private'),
+                      RuntimeError('SMOKE_API_BUDGET_STOP')]:
+            result=self.agent([dict(action='search',query='one'),error],max_searches=2)
+            self.assertEqual(result['status'],'error')
+            self.assertEqual(result['answer'],'')
+
+    def test_empty_results_need_model_abstention_not_corpus_absence_claim(self):
+        result=self.agent([dict(action='search',query='one'),
+            dict(action='answer',answer='Unsupported external knowledge',citations=[])],rows=[])
+        self.assertEqual(result['status'],'abstain')
+        self.assertEqual(result['events'][-1]['event'],'insufficient_evidence')
 
     def test_llm_retrieval_errors_and_timeouts_are_separate_from_abstention(self):
         for error in [RuntimeError('secret backend'),TimeoutError('secret')]:

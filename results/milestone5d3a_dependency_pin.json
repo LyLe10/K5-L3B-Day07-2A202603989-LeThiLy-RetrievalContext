@@ -1,0 +1,30 @@
+{
+  "kind": "milestone5d3a_reviewed_dependency_pin",
+  "code_sha256": {
+    "scripts/dev_improvement_experiment.py": "1a2b5d0b2ede6aff31aa01fc2da82cbe349e5ed34ea6e3e309f912a14cd94265",
+    "scripts/milestone5c_pilot.py": "b269023e664cbdf023822823a89df5330b54fb27a13ffcfe7134217b984bb7d8",
+    "scripts/prepare_improvement_experiments.py": "bca433baaca77395021b820714654668e5d99c0ccdbcefdf74ae5f7bdaf44a6f",
+    "scripts/milestone5c_remaining.py": "e6552124fbcef58cda747774d3075b280c08c3244dd9687a4753eb81fac960c9",
+    "scripts/dev_agent_evaluation.py": "fe5e30bc53be780bacd84be0b8a2fea0ace8995e1d7819bd2e7d74510c5f7d2d",
+    "scripts/dev_retrieval_benchmark.py": "c7af5f6c3bcb5bed17df8c571d37cb26a57d2dfa2c278d53e5df257aee98a86e",
+    "scripts/milestone4b_smoke.py": "16df863a03a1890f34c9a0e7efc09ee76c1e481d784808326fa4d39ed085ef63",
+    "scripts/dense_smoke.py": "719fdc45ce845c8bb26545fb4f2653f90b6aaf40f09f04ceac181277043e0964",
+    "src/__init__.py": "35515bcbfe52691c543adc4e74c4494f7f82694d70f00fbd3e22327923faecdb",
+    "src/agent.py": "650f6685ef7a00502e71d9a68e2143f02dbf7e3e67a0b01e3099b9c5b4d12689",
+    "src/llm.py": "fedc3d83d15a1adb7e31328204b457c30d5ad2c3a132aa300283c080dd0d1d88",
+    "src/retrieval.py": "c022616a8edd2d729fbad189b92bac2498dfcddf0bc7cf4b407f4c8072d8a5ca",
+    "src/context.py": "e865cd0b410051e68f7d40515ea48c54452de3474c9423542a68705ef888605a",
+    "src/dense.py": "5bf1161fc38364817a4e655a4234ee995807b5b1f414d194ac9a4438296330e9",
+    "src/benchmark_data.py": "38059d65b0af5743768d5a3518dc4f456c78937e7dd661057beae5b188721c50",
+    "src/openrouter_paid.py": "542defc6a03a3172c916ac4d1dcbd638f659a9c707418cb97c2d9252f367f232",
+    "starter/baseline.py": "03b8b16c42be7d19c820e506f4cea2a7496c462a00c77d1cfc9e7fc972301fdf",
+    "starter/agent_metrics.py": "c82ed0321b2a227fdf3c9d29970c2a4a35d32754d288dc8c14b1a1f10336dfe4"
+  },
+  "day6_root": "/mnt/c/Users/Admin/K5-L3B-DAY06-2A202603989-DataIngestion",
+  "day6_code_sha256": {
+    "starter/src/__init__.py": "86b6f304b218783f00e27c050a111049f5dc07fd98194c556deb0633d7c8980a",
+    "starter/src/embeddings.py": "a76d1943d75d578b9d16b3b7a2f970280bc8fc8ab8f7dc9a282be84ed10d686a",
+    "starter/src/schema.py": "44af24d061e2d1b84f43302964661f7ef610131a8d3a2d975cc80704af779479"
+  },
+  "scope": "Gate A dependency pin hardening only; no paid or HTTP approval"
+}

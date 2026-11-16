@@ -1,0 +1,855 @@
+{
+  "status": "E1_MANUAL_REVIEW_FINALIZED_BASELINE_HARMONIZATION_PENDING",
+  "metrics": {
+    "cases": 17,
+    "tool_use": {
+      "n": 17,
+      "N": 17
+    },
+    "grounded_answer": {
+      "0": 0,
+      "1": 1,
+      "2": 14,
+      "N": 15,
+      "mean": 1.9333333333333333,
+      "normalized_mean": 0.9666666666666667
+    },
+    "citation_validity": {
+      "n": 15,
+      "N": 16
+    },
+    "answer_citation_coverage": {
+      "n": 15,
+      "N": 15
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention": {
+      "n": 0,
+      "N": 15
+    },
+    "system_errors": 0,
+    "answer_correctness": {
+      "0": 0,
+      "1": 0,
+      "2": 15,
+      "N": 15,
+      "mean": 2.0,
+      "normalized_mean": 1.0
+    },
+    "context_grades": {
+      "0": 0,
+      "1": 0,
+      "2": 15
+    },
+    "scheduled_cases": 17,
+    "abstention_scheduled": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention_scheduled": {
+      "n": 0,
+      "N": 15
+    },
+    "retrieval_call_distribution": {
+      "2": 3,
+      "1": 14
+    },
+    "error_stages": {}
+  },
+  "baseline_original_metrics": {
+    "cases": 17,
+    "tool_use": {
+      "n": 17,
+      "N": 17
+    },
+    "grounded_answer": {
+      "0": 1,
+      "1": 1,
+      "2": 13,
+      "N": 15,
+      "mean": 1.8,
+      "normalized_mean": 0.9
+    },
+    "citation_validity": {
+      "n": 13,
+      "N": 14
+    },
+    "answer_citation_coverage": {
+      "n": 14,
+      "N": 14
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention": {
+      "n": 1,
+      "N": 15
+    },
+    "system_errors": 0,
+    "answer_correctness": {
+      "0": 1,
+      "1": 0,
+      "2": 14,
+      "N": 15,
+      "mean": 1.8666666666666667,
+      "normalized_mean": 0.9333333333333333
+    },
+    "context_grades": {
+      "0": 0,
+      "1": 0,
+      "2": 15
+    },
+    "scheduled_cases": 17,
+    "abstention_scheduled": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention_scheduled": {
+      "n": 1,
+      "N": 15
+    },
+    "retrieval_call_distribution": {
+      "2": 3,
+      "1": 14
+    },
+    "error_stages": {}
+  },
+  "baseline_harmonized_proposed_metrics": {
+    "cases": 17,
+    "tool_use": {
+      "n": 17,
+      "N": 17
+    },
+    "grounded_answer": {
+      "0": 1,
+      "1": 2,
+      "2": 12,
+      "N": 15,
+      "mean": 1.7333333333333334,
+      "normalized_mean": 0.8666666666666667
+    },
+    "citation_validity": {
+      "n": 12,
+      "N": 14
+    },
+    "answer_citation_coverage": {
+      "n": 14,
+      "N": 14
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention": {
+      "n": 1,
+      "N": 15
+    },
+    "system_errors": 0,
+    "answer_correctness": {
+      "0": 1,
+      "1": 0,
+      "2": 14,
+      "N": 15,
+      "mean": 1.8666666666666667,
+      "normalized_mean": 0.9333333333333333
+    },
+    "context_grades": {
+      "0": 0,
+      "1": 0,
+      "2": 15
+    },
+    "scheduled_cases": 17,
+    "abstention_scheduled": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention_scheduled": {
+      "n": 1,
+      "N": 15
+    },
+    "retrieval_call_distribution": {
+      "2": 3,
+      "1": 14
+    },
+    "error_stages": {}
+  },
+  "baseline_harmonization_approved": false,
+  "comparisons": {
+    "e1_minus_original": {
+      "percentage_point_deltas": {
+        "answer_correctness": 6.666666666666665,
+        "grounded_answer": 6.666666666666665,
+        "context_sufficiency": 0.0,
+        "citation_validity": 0.8928571428571397,
+        "abstention": 0.0,
+        "false_abstention": -6.666666666666667
+      },
+      "correctness_grade2_case_delta": 1,
+      "grounded_grade2_case_delta": 1,
+      "context_sufficient_case_delta": 0,
+      "supported_citation_delta": 2,
+      "total_citation_delta": 2,
+      "correct_absence_case_delta": 0,
+      "false_abstention_case_delta": -1
+    },
+    "e1_minus_harmonized_proposed": {
+      "percentage_point_deltas": {
+        "answer_correctness": 6.666666666666665,
+        "grounded_answer": 9.999999999999998,
+        "context_sufficiency": 0.0,
+        "citation_validity": 8.03571428571429,
+        "abstention": 0.0,
+        "false_abstention": -6.666666666666667
+      },
+      "correctness_grade2_case_delta": 1,
+      "grounded_grade2_case_delta": 2,
+      "context_sufficient_case_delta": 0,
+      "supported_citation_delta": 3,
+      "total_citation_delta": 2,
+      "correct_absence_case_delta": 0,
+      "false_abstention_case_delta": -1
+    }
+  },
+  "paired_cases": [
+    {
+      "query_id": "dev-01",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-02",
+      "baseline_original": {
+        "answer_correctness_grade": 0,
+        "answer_grade": 0,
+        "context_grade": 2,
+        "citation_support": [],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 0,
+        "answer_grade": 0,
+        "context_grade": 2,
+        "citation_support": [],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true,
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-03",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-04",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-05",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 1,
+        "context_grade": 2,
+        "citation_support": [
+          false
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 1,
+        "context_grade": 2,
+        "citation_support": [
+          false
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Apparent original-baseline grounding regression is grading harmonization, pending approval."
+    },
+    {
+      "query_id": "dev-06",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-07",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-08",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-09",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 1,
+        "context_grade": 2,
+        "citation_support": [
+          false
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 1,
+        "context_grade": 2,
+        "citation_support": [
+          false
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-10",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-11",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-12",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-13",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-14",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-15",
+      "baseline_original": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "e1": {
+        "answer_correctness_grade": 2,
+        "answer_grade": 2,
+        "context_grade": 2,
+        "citation_support": [
+          true
+        ],
+        "abstention_correct": null
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-16",
+      "baseline_original": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true
+      },
+      "e1": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    },
+    {
+      "query_id": "dev-17",
+      "baseline_original": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true
+      },
+      "baseline_harmonized_proposed": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true
+      },
+      "e1": {
+        "answer_correctness_grade": null,
+        "answer_grade": null,
+        "context_grade": 0,
+        "citation_support": [],
+        "abstention_correct": true
+      },
+      "interpretation": "Paired approved-E1 vs original baseline judgments; compare harmonized view separately."
+    }
+  ],
+  "runtime": {
+    "baseline_original": {
+      "llm_requests": 37,
+      "retrieval_calls": 20,
+      "prompt_tokens": 38135,
+      "completion_tokens": 2965,
+      "total_tokens": 41100,
+      "provider_reported_cost_usd": "0.00432165",
+      "agent_latency_ms_sum": 84890.34811599777,
+      "retained_reservations_usd": "0.148"
+    },
+    "baseline_harmonized_proposed": {
+      "llm_requests": 37,
+      "retrieval_calls": 20,
+      "prompt_tokens": 38135,
+      "completion_tokens": 2965,
+      "total_tokens": 41100,
+      "provider_reported_cost_usd": "0.00432165",
+      "agent_latency_ms_sum": 84890.34811599777,
+      "retained_reservations_usd": "0.148"
+    },
+    "e1": {
+      "llm_requests": 37,
+      "retrieval_calls": 20,
+      "prompt_tokens": 43248,
+      "completion_tokens": 2970,
+      "total_tokens": 46218,
+      "provider_reported_cost_usd": "0.00478332",
+      "agent_latency_ms_sum": 84114.37843900057,
+      "retained_reservations_usd": "0.148"
+    }
+  },
+  "reservation_explanation": {
+    "per_request_usd": "0.004",
+    "e1_requests": 37,
+    "retained_usd": "0.148",
+    "envelope_usd": "0.204",
+    "unreserved_envelope_usd": "0.056",
+    "reservations_released": false
+  },
+  "grading_convention": {
+    "id": "dev-original-question-correctness-v1",
+    "source": "Explicit user approval in Milestone 5C.3C Step B following 17-case grading consistency review",
+    "answer_correctness_grade": "Extended convention: accurate fulfillment of the original question, 0/1/2. This separate score is NOT independently defined or required by BENCHMARK.md.",
+    "answer_grade": "BENCHMARK grounded-answer scale: assess the whole final answer including added claims; 0 wrong/missing evidence, 1 partial, 2 correct and fully supported. Answerable final abstention scores zero.",
+    "context_grade": "0 no supporting evidence; 1 incomplete condition/source; 2 sufficient evidence and source for the question.",
+    "citation_support": "One boolean per final citation: membership AND semantic support of associated claims. Partial support is false. No citations => empty arrays and 0/0 N/A.",
+    "abstention_correct": "Boolean for unanswerable cases only; distinguish system-guard refusal from voluntary LLM abstention.",
+    "final_output_only": true,
+    "gold_not_modified": true
+  },
+  "frozen": {
+    "manifest_sha256": "f4a25e54672d133ddd036fc96e6aa7f4c967c2dbb56be289499d51e5171344ac",
+    "files_sha256": {
+      "dev.json": "151cdad6619dd9fe92d3ddcf5b949376343449723b670a77e5785e5bb4857b0c",
+      "test.json": "e0b910920a60331679e5a663199a43b271a2d3ebd4bfe74613da64e2af908c79"
+    },
+    "manifest_pin_sha256": "333059bfeebc18c78e76d58d2431798e58e07e8f832954e70f3714057fad1333",
+    "identity": {
+      "dataset_id": "day06-postgresql",
+      "profile_id": "528f0792d5fdf66a50c7d42f12de648935d70e2912072e6c6dd2eb6b3f4fd651",
+      "snapshot_id": "c7d9d92e6695709595d044e5a5a09bb8f91826fb692474c7b1806751015ec1e0",
+      "manifest_sha256": "6ec73dc52b8cb5d83f5b08baeffcb231109cc2bbd95525c3315ae72c1f29db5d",
+      "corpus_sha256": "1a2f8abbcda200d11f7316d9d5069ade2e6b32f09b02f69f1b49c1046779811e",
+      "chunkset_sha256": "a149b3f639b46a6d022cf3319abc12a72d604965e4407dd23431471914c08c03",
+      "chunk_artifact_sha256": "5aa3c038c002b6bac529424b585d6cfd0c8132d6d3e1d021e80a9ef473f2fdd5",
+      "chunk_count": 264,
+      "page_count": 40
+    }
+  },
+  "review_source": "results/milestone5d_e1_manual_review.json",
+  "aggregator": "scripts.dev_agent_evaluation.score_reviewed (unchanged)",
+  "protected_input_sha256": {
+    "data/benchmark/dev.json": "151cdad6619dd9fe92d3ddcf5b949376343449723b670a77e5785e5bb4857b0c",
+    "data/benchmark/test.json": "e0b910920a60331679e5a663199a43b271a2d3ebd4bfe74613da64e2af908c79",
+    "data/benchmark/manifest.json": "f4a25e54672d133ddd036fc96e6aa7f4c967c2dbb56be289499d51e5171344ac",
+    "data/benchmark/manifest.sha256": "333059bfeebc18c78e76d58d2431798e58e07e8f832954e70f3714057fad1333",
+    "results/milestone5d_e1_raw.json": "9fe78b66e1c2ba0f89b22fc6ce65624bbd9baac7166bd3210d7a1d440729acdc",
+    "results/milestone5c3c_dev17_metrics.json": "5c406e4e75412625bf0129d8fb9c5ea8bd9c943484eb249faf53528a09643f6f",
+    "results/milestone5c3c_dev17_manual_reviews.json": "3dee2eefd1682e46fb4952642387d6e96a32dce232fc10c4965bb36745a60a9a",
+    "results/milestone5c3c_dev17_traces.json": "ad3878edc2582d8531cd1cd8351b20810c8352ff94c76600f5ad65648025c1b2",
+    "results/milestone5c2_manual_reviews.json": "c9b0018a862c2c21e6d7db2a6d65e2298c1c532a89bb663135b3bc7ecaf4ecc9",
+    "results/milestone5c3b_manual_reviews.json": "119a11754e3e877b3c40fe3fa7ceb4cab2e5e939bcef3f4298c4960b2c3372d3",
+    "results/milestone5c_pilot_requests.jsonl": "b22734a006748ece5a8d6c371fbbc899632592e9c2ee28140aa69c731ab1d48f",
+    "results/milestone5c3a_remaining_requests.jsonl": "a5752724cb3c62403ba1ec38645dc5567136f346c0fd63e9b58c1862a85ff519",
+    "results/milestone5d_e1_run/identity.json": "34e7ac61cc6b76023b0b55303e176172b04ec2dc35535892450f2681c6a546de",
+    "results/milestone5d_e1_run/requests.jsonl": "946fe621aa7406ff877c70e217c3aa8c58b5ca97a8e293fa668b2cf9b388a943",
+    "results/milestone5d_e1_run/checkpoints/dev-01.json": "dcd1e0aa1d75b00eba7405be06cd4cf9b6ea875cba4146c286a742a8b2a8dc28",
+    "results/milestone5d_e1_run/checkpoints/dev-02.json": "6cf85bde1cccfbd0948dca3a5f8c8033fff0614806f87fdb8cafccdd3fc6ffd3",
+    "results/milestone5d_e1_run/checkpoints/dev-03.json": "6fba6a053ab99e8be8658be577320c4f4362b49b30e8d1eb68792328ab36e659",
+    "results/milestone5d_e1_run/checkpoints/dev-04.json": "ebe9cc0c7d61fd7cc1f1aa21b996de309da84a6e83ec752e417922965a1a5f33",
+    "results/milestone5d_e1_run/checkpoints/dev-05.json": "6c41e23f1177ba8ce803969c194ce16702c07628789e330905920bc152df92d3",
+    "results/milestone5d_e1_run/checkpoints/dev-06.json": "b2879cc29a95319f9583e588da06ca064b771c9886cca0061770ff9709f1e820",
+    "results/milestone5d_e1_run/checkpoints/dev-07.json": "174eef76d8f931153d06e21f0dfbadbabf0e7c5666c21556738070851f7a6002",
+    "results/milestone5d_e1_run/checkpoints/dev-08.json": "e8adaa80ad9d8343f4e9b4214bbcfef325339b4073c8959877e176a1179edff3",
+    "results/milestone5d_e1_run/checkpoints/dev-09.json": "3ee69f5f45432bfe4ac713701884692b1b82cb54320b3ba4c9458f23306fe375",
+    "results/milestone5d_e1_run/checkpoints/dev-10.json": "4bf9118931877ab8e3fa7eef25db7915767e63c19a3f63434b0a6e031930fcdf",
+    "results/milestone5d_e1_run/checkpoints/dev-11.json": "fd649f3ffad2c54a22d02fd1104f738a32208605ccfe9c2c19d169ff410d9eec",
+    "results/milestone5d_e1_run/checkpoints/dev-12.json": "7c7e5a8b672c7d40805f56365aeb74b88270cf2c9a4333b7285943a8d6b516f6",
+    "results/milestone5d_e1_run/checkpoints/dev-13.json": "0706584f0be8f03e0acc31ce52e887e6ef86a6de4dbe0b324ab0de8a51cf6039",
+    "results/milestone5d_e1_run/checkpoints/dev-14.json": "472abac38fc770d38c12bbeff8638d0eee803b9f92eccead16b13953c8bdad3e",
+    "results/milestone5d_e1_run/checkpoints/dev-15.json": "36e9ab0d6a8cf5e3c8076452f5b6ecd35a332605b186c2e100d96f853955b511",
+    "results/milestone5d_e1_run/checkpoints/dev-16.json": "40ed619c77daf31eba804833e811b517b711179d859653c9c63c90b470c6d498",
+    "results/milestone5d_e1_run/checkpoints/dev-17.json": "9691b0a4f09bd8a8efd53baeb0e81ae50c6a1e786b23567ef4c6cb6c7d45aa86",
+    "src/agent.py": "650f6685ef7a00502e71d9a68e2143f02dbf7e3e67a0b01e3099b9c5b4d12689",
+    "src/benchmark_data.py": "38059d65b0af5743768d5a3518dc4f456c78937e7dd661057beae5b188721c50",
+    "src/context.py": "e865cd0b410051e68f7d40515ea48c54452de3474c9423542a68705ef888605a",
+    "src/dense.py": "5bf1161fc38364817a4e655a4234ee995807b5b1f414d194ac9a4438296330e9",
+    "src/llm.py": "fedc3d83d15a1adb7e31328204b457c30d5ad2c3a132aa300283c080dd0d1d88",
+    "src/openrouter_paid.py": "542defc6a03a3172c916ac4d1dcbd638f659a9c707418cb97c2d9252f367f232",
+    "src/retrieval.py": "c022616a8edd2d729fbad189b92bac2498dfcddf0bc7cf4b407f4c8072d8a5ca",
+    "src/__init__.py": "35515bcbfe52691c543adc4e74c4494f7f82694d70f00fbd3e22327923faecdb",
+    "scripts/dev_agent_evaluation.py": "fe5e30bc53be780bacd84be0b8a2fea0ace8995e1d7819bd2e7d74510c5f7d2d",
+    "scripts/dev_retrieval_benchmark.py": "c7af5f6c3bcb5bed17df8c571d37cb26a57d2dfa2c278d53e5df257aee98a86e",
+    "starter/agent_metrics.py": "c82ed0321b2a227fdf3c9d29970c2a4a35d32754d288dc8c14b1a1f10336dfe4"
+  },
+  "new_llm_requests": 0,
+  "new_external_api_requests": 0,
+  "limitations": [
+    "Harmonized baseline is a proposal, not an official replacement.",
+    "One paired DEV run does not establish significance or independent TEST performance.",
+    "No E1 winner/configuration freeze is declared.",
+    "Provider usage cost is not invoice/account reconciliation."
+  ]
+}

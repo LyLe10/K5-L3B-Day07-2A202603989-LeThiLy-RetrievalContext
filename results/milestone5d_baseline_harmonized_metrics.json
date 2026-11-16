@@ -1,0 +1,65 @@
+{
+  "status": "APPROVED",
+  "metrics": {
+    "cases": 17,
+    "tool_use": {
+      "n": 17,
+      "N": 17
+    },
+    "grounded_answer": {
+      "0": 1,
+      "1": 2,
+      "2": 12,
+      "N": 15,
+      "mean": 1.7333333333333334,
+      "normalized_mean": 0.8666666666666667
+    },
+    "citation_validity": {
+      "n": 12,
+      "N": 14
+    },
+    "answer_citation_coverage": {
+      "n": 14,
+      "N": 14
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention": {
+      "n": 1,
+      "N": 15
+    },
+    "system_errors": 0,
+    "answer_correctness": {
+      "0": 1,
+      "1": 0,
+      "2": 14,
+      "N": 15,
+      "mean": 1.8666666666666667,
+      "normalized_mean": 0.9333333333333333
+    },
+    "context_grades": {
+      "0": 0,
+      "1": 0,
+      "2": 15
+    },
+    "scheduled_cases": 17,
+    "abstention_scheduled": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention_scheduled": {
+      "n": 1,
+      "N": 15
+    },
+    "retrieval_call_distribution": {
+      "2": 3,
+      "1": 14
+    },
+    "error_stages": {}
+  },
+  "source_review": "results/milestone5d_baseline_harmonized_reviews.json",
+  "source_trace": "results/milestone5c3c_dev17_traces.json",
+  "original_baseline_modified": false
+}
